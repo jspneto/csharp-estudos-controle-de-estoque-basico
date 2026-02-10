@@ -17,29 +17,18 @@ class Program
         produto.Quantidade = int.Parse(Console.ReadLine()!);
 
         Console.WriteLine("");
-        Console.Write("Dados do produto: ");
-        ExibirDados(produto);
+        Console.WriteLine("Dados do produto: " + produto.ToString());
 
         Console.WriteLine("");
         Console.Write("Digite o número de unidades a ser adicionada ao estoque: ");
         int quantidade = int.Parse(Console.ReadLine()!);
         produto.AdicionarProdutos(quantidade);
-        Console.Write("Dados atualizados: ");
-        ExibirDados(produto);
+        Console.WriteLine("Dados atualizados: " + produto.ToString());
 
         Console.WriteLine("");
         Console.Write("Digite o número de unidades a ser removida do estoque: ");
         quantidade = int.Parse(Console.ReadLine()!);
         produto.RemoverProdutos(quantidade);
-        Console.Write("Dados atualizados: ");
-        ExibirDados(produto);
-    }
-
-    static void ExibirDados(Produto produto)
-    {
-        Console.Write(produto.Nome + ", R$ ");
-        Console.Write(produto.Preco.ToString("F2", CultureInfo.InvariantCulture) + ", " );
-        Console.Write(produto.Quantidade + " unidade(s), Valor em estoque: R$ ");
-        Console.WriteLine(produto.ValorEstoque().ToString("F2", CultureInfo.InvariantCulture) + ".");
+        Console.WriteLine("Dados atualizados: " + produto.ToString());
     }
 }
