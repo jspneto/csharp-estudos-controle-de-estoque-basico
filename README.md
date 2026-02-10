@@ -1,2 +1,44 @@
-# csharp-estudos-controle-de-estoque-basico
+# Controle de Estoque Básico
+
 Projeto de estudo em C# com o objetivo de modelar e manipular os dados de um produto em estoque, permitindo consultar informações, registrar entradas e saídas e calcular o valor total armazenado.
+
+Este projeto foi desenvolvido de forma incremental, registrando a evolução do código em uma abordagem **orientada a objetos**.
+
+## Conceitos Trabalhados
+
+- Leitura e exibição de dados via console
+- Modelagem de entidades simples
+- Encapsulamento de dados e comportamentos
+- Criação de métodos para regras de negócio
+- Cálculo de valores derivados a partir de atributos
+- Organização e versionamento de código com Git
+
+## Enunciado do Problema
+
+Ler e armazenar os dados de um **produto em estoque**, contendo informações básicas como nome, preço e quantidade disponível.
+
+A aplicação permite:
+- Exibir os dados atuais do produto
+- Atualizar a quantidade por meio de entradas no estoque
+- Atualizar a quantidade por meio de saídas no estoque
+- Calcular automaticamente o valor total do estoque com base nos dados do produto
+
+O foco está na **organização do código** e na separação clara entre dados e comportamentos.
+
+## Estrutura do Projeto
+
+```bash
+|- ControleEstoqueBasico
+   |- ControleEstoqueBasico.csproj
+   |- ControleEstoqueBasico.sln
+   |- Program.cs
+```
+
+*(A estrutura pode evoluir conforme o aprendizado avança.)*
+
+## Evolução do Projeto (Tags)
+
+## Objetivo Educacional
+
+Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de
+aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
