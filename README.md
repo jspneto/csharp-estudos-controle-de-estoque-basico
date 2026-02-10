@@ -31,6 +31,7 @@ O foco está na **organização do código** e na separação clara entre dados 
 |- ControleEstoqueBasico
    |- ControleEstoqueBasico.csproj
    |- ControleEstoqueBasico.sln
+   |- Produto.cs
    |- Program.cs
 ```
 
@@ -38,7 +39,11 @@ O foco está na **organização do código** e na separação clara entre dados 
 
 ## Evolução do Projeto (Tags)
 
+- [**v0.1**][1] — Implementação da classe `Produto` com atributos públicos
+
 ## Objetivo Educacional
 
 Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de
 aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
+
+[1]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.1/ControleEstoqueBasico "v0.1"
