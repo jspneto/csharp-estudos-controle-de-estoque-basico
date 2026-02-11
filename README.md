@@ -44,6 +44,7 @@ O foco está na **organização do código** e na separação clara entre dados 
 - [**v0.3**][3] — Introdução de construtor na classe Produto
 - [**v0.4**][4] — Sobrecarga de construtores na classe Produto
 - [**v0.5**][5] — Aplicação de encapsulamento na classe Produto
+- [**v0.6**][6] — Utilização de properties na classe Produto
 
 ## Objetivo Educacional
 
@@ -59,3 +60,5 @@ aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
 [4]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.4/ControleEstoqueBasico "v0.4"
 
 [5]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.5/ControleEstoqueBasico "v0.5"
+
+[6]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.6/ControleEstoqueBasico "v0.6"
