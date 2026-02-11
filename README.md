@@ -41,6 +41,7 @@ O foco está na **organização do código** e na separação clara entre dados 
 
 - [**v0.1**][1] — Implementação da classe `Produto` com atributos públicos
 - [**v0.2**][2] — Sobrescrita do método ToString e melhoria de encapsulamento da exibição
+- [**v0.3**][3] — Introdução de construtor na classe Produto
 
 ## Objetivo Educacional
 
@@ -50,3 +51,5 @@ aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
 [1]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.1/ControleEstoqueBasico "v0.1"
 
 [2]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.2/ControleEstoqueBasico "v0.2"
+
+[3]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.3/ControleEstoqueBasico "v0.3"
