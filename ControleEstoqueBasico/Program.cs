@@ -7,28 +7,29 @@ class Program
 {
     static void Main(string[] args)
     {
-        Produto produto = new Produto();
         Console.WriteLine("Entre com os dados do produto:");
         Console.Write("Nome: ");
-        produto.Nome = Console.ReadLine()!;
+        string nome = Console.ReadLine()!;
         Console.Write("Preço: ");
-        produto.Preco = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        double preco = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
         Console.Write("Quantidade em estoque: ");
-        produto.Quantidade = int.Parse(Console.ReadLine()!);
+        int quantidade = int.Parse(Console.ReadLine()!);
+
+        Produto produto = new Produto(nome, preco, quantidade);
 
         Console.WriteLine("");
         Console.WriteLine("Dados do produto: " + produto.ToString());
 
         Console.WriteLine("");
         Console.Write("Digite o número de unidades a ser adicionada ao estoque: ");
-        int quantidade = int.Parse(Console.ReadLine()!);
-        produto.AdicionarProdutos(quantidade);
+        int quantidadeAlterada = int.Parse(Console.ReadLine()!);
+        produto.AdicionarProdutos(quantidadeAlterada);
         Console.WriteLine("Dados atualizados: " + produto.ToString());
 
         Console.WriteLine("");
         Console.Write("Digite o número de unidades a ser removida do estoque: ");
-        quantidade = int.Parse(Console.ReadLine()!);
-        produto.RemoverProdutos(quantidade);
+        quantidadeAlterada = int.Parse(Console.ReadLine()!);
+        produto.RemoverProdutos(quantidadeAlterada);
         Console.WriteLine("Dados atualizados: " + produto.ToString());
     }
 }
