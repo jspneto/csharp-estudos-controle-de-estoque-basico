@@ -12,10 +12,8 @@ class Program
         string nome = Console.ReadLine()!;
         Console.Write("Preço: ");
         double preco = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
-        Console.Write("Quantidade em estoque: ");
-        int quantidade = int.Parse(Console.ReadLine()!);
 
-        Produto produto = new Produto(nome, preco, quantidade);
+        Produto produto = new Produto(nome, preco);
 
         Console.WriteLine("");
         Console.WriteLine("Dados do produto: " + produto.ToString());
