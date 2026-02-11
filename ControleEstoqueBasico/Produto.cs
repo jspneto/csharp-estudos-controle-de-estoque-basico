@@ -16,10 +16,8 @@ class Produto
         Quantidade = 0;
     }
 
-    public Produto(string nome, double preco, int quantidade)
+    public Produto(string nome, double preco, int quantidade) : this(nome, preco)
     {
-        Nome = nome;
-        Preco = preco;
         Quantidade = quantidade;
     }
 
