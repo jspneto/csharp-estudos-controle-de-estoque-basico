@@ -6,19 +6,19 @@ namespace ControleEstoqueBasico;
 class Produto
 {
     private string _nome;
-    private double _preco;
-    private int _quantidade;
+    public double Preco { get; private set; }
+    public int Quantidade { get; private set; }
 
     public Produto(string nome, double preco)
     {
         _nome = nome;
-        _preco = preco;
-        _quantidade = 0;
+        Preco = preco;
+        Quantidade = 0;
     }
 
     public Produto(string nome, double preco, int quantidade) : this(nome, preco)
     {
-        _quantidade = quantidade;
+        Quantidade = quantidade;
     }
 
     public string Nome
@@ -37,44 +37,28 @@ class Produto
         }
     }
 
-    public double Preco
-    {
-        get
-        {
-            return _preco;
-        }
-    }
-
-    public int Quantidade
-    {
-        get
-        {
-            return _quantidade;
-        }
-    }
-
     public double ValorEstoque()
     {
-        return _preco * _quantidade;
+        return Preco * Quantidade;
     }
 
     public void AdicionarProdutos(int quantidade)
     {
-        _quantidade+=quantidade;
+        Quantidade+=quantidade;
     }
 
     public void RemoverProdutos(int quantidade)
     {
-       _quantidade-=quantidade;
+       Quantidade-=quantidade;
     }
 
     public override string ToString()
     {
         return _nome
             + ", R$ "
-            + _preco.ToString("F2", CultureInfo.InvariantCulture)
+            + Preco.ToString("F2", CultureInfo.InvariantCulture)
             + ", "
-            + _quantidade
+            + Quantidade
             + " unidade(s), Valor em estoque: R$ "
             + ValorEstoque().ToString("F2", CultureInfo.InvariantCulture)
             + ".";
