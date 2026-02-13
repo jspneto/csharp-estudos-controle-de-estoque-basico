@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace ControleEstoqueBasico;
+namespace ControleEstoqueBasico.Src;
 
 class Produto
 {
