@@ -40,4 +40,20 @@ static class ProdutoExemplos
         Produto produto2 = new Produto(nome, preco);
         Console.WriteLine(produto2.ToString());
     }
+
+    static public void ExemploEncapsulamento()
+    {
+        Console.WriteLine("Exemplo de uso de encapsulamento:");
+        Produto produto = ProdutoAuxiliares.CriarProduto();
+        Console.WriteLine($"Nome: {produto.Nome}");
+        Console.WriteLine($"Preço: {produto.Preco.ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Quantidade: {produto.Quantidade}");
+
+        Console.WriteLine();
+        Console.Write("Altere o nome:");
+        produto.Nome = Console.ReadLine()!;
+        Console.WriteLine($"Nome: {produto.Nome}");
+        Console.WriteLine($"Preço: {produto.Preco.ToString("F2", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Quantidade: {produto.Quantidade}");
+    }
 }
