@@ -29,9 +29,12 @@ O foco está na **organização do código** e na separação clara entre dados 
 
 ```bash
 |- ControleEstoqueBasico
+   |- Src
+      |- Produto.cs
+      |- ProdutoAuxiliares.cs
+      |- ProdutoExemplos.cs
    |- ControleEstoqueBasico.csproj
    |- ControleEstoqueBasico.sln
-   |- Produto.cs
    |- Program.cs
 ```
 
@@ -47,6 +50,7 @@ O foco está na **organização do código** e na separação clara entre dados 
 - [**v0.6**][6] — Utilização de properties na classe `Produto`
 - [**v0.7**][7] — Aplicação de AutoProperties na classe `Produto`
   - [**v0.7.1**][8] — Reorganização estrutural do programa principal
+  - [**v0.7.2**][9] — Reorganização estrutural e separação de responsabilidades
 
 ## Objetivo Educacional
 
@@ -67,3 +71,5 @@ Este projeto **não tem como foco a solução final perfeita**, mas sim o proces
 [7]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.7/ControleEstoqueBasico "v0.7"
 
 [8]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.7.1/ControleEstoqueBasico "v0.7"
+
+[9]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.7.2/ControleEstoqueBasico "v0.7"
