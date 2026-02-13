@@ -40,17 +40,17 @@ O foco está na **organização do código** e na separação clara entre dados 
 ## Evolução do Projeto (Tags)
 
 - [**v0.1**][1] — Implementação da classe `Produto` com atributos públicos
-- [**v0.2**][2] — Sobrescrita do método ToString e melhoria de encapsulamento da exibição
-- [**v0.3**][3] — Introdução de construtor na classe Produto
-- [**v0.4**][4] — Sobrecarga de construtores na classe Produto
-- [**v0.5**][5] — Aplicação de encapsulamento na classe Produto
-- [**v0.6**][6] — Utilização de properties na classe Produto
-- [**v0.7**][7] — Aplicação de AutoProperties na classe Produto
+- [**v0.2**][2] — Sobrescrita do método `ToString` e melhoria de encapsulamento da exibição
+- [**v0.3**][3] — Introdução de construtor na classe `Produto`
+- [**v0.4**][4] — Sobrecarga de construtores na classe `Produto`
+- [**v0.5**][5] — Aplicação de encapsulamento na classe `Produto`
+- [**v0.6**][6] — Utilização de properties na classe `Produto`
+- [**v0.7**][7] — Aplicação de AutoProperties na classe `Produto`
+  - [**v0.7.1**][8] — Reorganização estrutural do programa principal
 
 ## Objetivo Educacional
 
-Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de
-aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
+Este projeto **não tem como foco a solução final perfeita**, mas sim o processo de aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
 
 [1]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.1/ControleEstoqueBasico "v0.1"
 
@@ -65,3 +65,5 @@ aprendizado e a comparação entre abordagens diferentes para o mesmo problema.
 [6]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.6/ControleEstoqueBasico "v0.6"
 
 [7]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.7/ControleEstoqueBasico "v0.7"
+
+[8]: https://github.com/jspneto/csharp-estudos-controle-de-estoque-basico/tree/v0.7.1/ControleEstoqueBasico "v0.7"
