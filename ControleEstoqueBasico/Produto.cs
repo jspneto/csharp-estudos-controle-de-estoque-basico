@@ -54,13 +54,9 @@ class Produto
 
     public override string ToString()
     {
-        return _nome
-            + ", R$ "
-            + Preco.ToString("F2", CultureInfo.InvariantCulture)
-            + ", "
-            + Quantidade
-            + " unidade(s), Valor em estoque: R$ "
-            + ValorEstoque().ToString("F2", CultureInfo.InvariantCulture)
-            + ".";
+        return $"{_nome}, "
+            + $"R$ {Preco.ToString("F2", CultureInfo.InvariantCulture)}, "
+            + $"{Quantidade} unidade(s), "
+            + $"Valor em estoque: R$ {ValorEstoque().ToString("F2", CultureInfo.InvariantCulture)}";
     }
 }
