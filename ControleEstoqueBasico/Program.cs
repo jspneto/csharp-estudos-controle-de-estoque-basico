@@ -7,27 +7,44 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Entre com os dados do produto:");
+        Produto produto = CriarProduto();
+        Console.WriteLine(produto.ToString());
+
+        Console.WriteLine();
+        AdicionarUnidades(produto);
+        Console.WriteLine(produto.ToString());
+
+        Console.WriteLine();
+        RemoverUnidades(produto);
+        Console.WriteLine(produto.ToString());
+    }
+
+    static Produto CriarProduto()
+    {
+        Console.WriteLine("Entre com os dados do produto: ");
         Console.Write("Nome: ");
         string nome = Console.ReadLine()!;
         Console.Write("Preço: ");
         double preco = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+        Console.Write("Número de unidades: ");
+        int quantidade = int.Parse(Console.ReadLine()!);
 
-        Produto produto = new Produto(nome, preco);
+        Produto produto = new Produto(nome, preco, quantidade);
 
-        Console.WriteLine("");
-        Console.WriteLine("Dados do produto: " + produto.ToString());
+        return produto;
+    }
 
-        Console.WriteLine("");
-        Console.Write("Digite o número de unidades a ser adicionada ao estoque: ");
-        int quantidadeAlterada = int.Parse(Console.ReadLine()!);
-        produto.AdicionarProdutos(quantidadeAlterada);
-        Console.WriteLine("Dados atualizados: " + produto.ToString());
+    static void AdicionarUnidades(Produto produto)
+    {
+        Console.WriteLine("Digite o número de unidades que deseja adicionar: ");
+        int quantidade = int.Parse(Console.ReadLine()!);
+        produto.AdicionarProdutos(quantidade);
+    }
 
-        Console.WriteLine("");
-        Console.Write("Digite o número de unidades a ser removida do estoque: ");
-        quantidadeAlterada = int.Parse(Console.ReadLine()!);
-        produto.RemoverProdutos(quantidadeAlterada);
-        Console.WriteLine("Dados atualizados: " + produto.ToString());
+    static void RemoverUnidades(Produto produto)
+    {
+        Console.WriteLine("Digite o número de unidades que deseja remover: ");
+        int quantidade = int.Parse(Console.ReadLine()!);
+        produto.RemoverProdutos(quantidade);
     }
 }
